@@ -1,4 +1,4 @@
-import React, {useEffect, useState, Suspense } from 'react'
+import React, {useEffect, useState} from 'react'
 import axios from 'axios';
 
 const getRepositories = (username) => {
@@ -16,7 +16,6 @@ const getRepositories = (username) => {
 
 // global counters
 var licensed = 0;
-var unlicensed = 0;
 var total = 0;
 
 
@@ -24,7 +23,6 @@ var total = 0;
 function includeRepo(repo){
   const license = repo['license'];
   if (!license) {
-    unlicensed++;
     total++;
     return true
   } else {
@@ -38,11 +36,6 @@ const filterRepos = repos => {
   return repos.filter(includeRepo);
 }
 
-const spinner = props => {
-  return (
-    <h3> Waiting ... </h3>
-  );
-};
 
 const RepoList = props => {
 

@@ -87,7 +87,7 @@ const RepoList = props => {
               className='flex flex-col p-3 m-3 rounded shadow-md sm:flex-row md:flex-row lg:flex-row'
             > 
               <span className='flex-1 w-full p-3 text-md'>{repo.full_name}</span>
-              <span className='flex-1 w-full p-3 text-white bg-blue-500 rounded text-md'><a href={repo.html_url}> Take me there  </a></span>
+              <span className='flex-1 w-full p-3 text-white bg-blue-500 rounded text-md'><a href={repo.html_url} target='_blank' rel='noopener noreferrer'> Take me there  </a></span>
                
             </li>
           ))}

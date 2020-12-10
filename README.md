@@ -9,9 +9,9 @@ This is a website which tells you which of your public Github Repositories do no
 
 ## Images
 
-![Intro Screen - Github Policeman](./images/Screenshot from 2020-12-09 22-29-38.png)
+![Intro Screen - Github Policeman](./images/demo1.png)
 
-![Github Policeman Screen with a Username Given](./images/Screenshot from 2020-12-09 22-30-36.png)
+![Github Policeman Screen with a Username Given](./images/demo2.png)
 
 ## Install Steps
 
